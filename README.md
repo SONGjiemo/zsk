@@ -24,4 +24,5 @@
 
 > 打赏微信二维码-助力更多优质文章
 
-[![简介](https://pm.axuremost.cn/wp-content/uploads/2024/08/2024091219060270.png)](https://pm.axuremost.cn/wp-content/uploads/2024/08/2024091219060270.png)
+
+![1](https://github.com/user-attachments/assets/ec88633e-8cf8-4ffe-8eb8-2e56b0b62ed0)
