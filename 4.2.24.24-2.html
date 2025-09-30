@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="applicable-device"content="pc,mobile">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>相关性分析定义作用 - AxureMost 落葵网</title>
+<meta name="keywords" content="">
+<meta name="description" content="相关性分析介绍 定义 相关性分析是一种统计方法，用于研究两个或多个变量之间的关联程度。它衡量的是变量之间线性关系的强度和方向。例如，在研究学生成绩与学习时间的关系时，相关性分析可以告诉我们随着学习时间的增加，成绩是否会相应提高，以及这种关系的紧密程度。 常用方法和指标 皮尔逊相关系数（Pearson Correlati..."><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4073586_5fq4g109min.css"/>
+<link rel="shortcut icon" href="https://pm.axuremost.cn/wp-content/uploads/2024/06/官网小图标.png"/>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<!-- ERROR: WP-Optimize Minify was not allowed to save its cache on - wp-content/cache/wpo-minify/1759145815/assets/wpo-minify-header-style1754291389.min.css --><!-- Please check if the path above is correct and ensure your server has write permission there! --><link rel='stylesheet' id='wp-block-library-css' href='./assets/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpo_min-header-1-css' href='./assets/cache/wpo-minify/1759145815/assets/wpo-minify-header-gutenberg-pdfjs1754023297.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='docspress-css' href='./assets/plugins/docspress/assets/css/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpo_min-header-3-css' href='./assets/cache/wpo-minify/1759145815/assets/wpo-minify-header-ceoshop1745382976.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ladda-css' href='./assets/themes/ceomax-pro/ceoshop/assets/css/ladda-themeless.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpo_min-header-5-css' href='./assets/cache/wpo-minify/1759145815/assets/wpo-minify-header-uikit1745412926.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpo_min-header-6-css' href='./assets/cache/wpo-minify/1759145815/assets/wpo-minify-header-diy1753778861.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='./assets/themes/ceomax-pro/static/css/jquery.fancybox.min.css' type='text/css' media='all' />
+<script type="text/javascript" src="./assets/themes/ceomax-pro/static/js/uikit.min.js" id="uikit-js"></script>
+<script type="text/javascript" src="./assets/cache/wpo-minify/1759145815/assets/wpo-minify-header-jqueryform1604035520.min.js" id="wpo_min-header-2-js"></script>
+
+<link rel="icon" href="./assets/uploads/2024/06/cropped-官网小图标-40x40.png" sizes="32x32" />
+<link rel="icon" href="./assets/uploads/2024/06/cropped-官网小图标.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="./assets/uploads/2024/06/cropped-官网小图标.png" />
+<meta name="msapplication-TileImage" content="./assets/uploads/2024/06/cropped-官网小图标.png" />
+<style type="text/css">.docspress-single-feedback,
+.docspress-search-form,
+.docspress-search-form-result {
+    display: none;
+}
+body {
+    background-color: #fff;
+}</style>
+
+</head>
+	<body id="ceotheme" class="">
+        <script>var all_night_theme=false;</script><script>var is_switch_day_night=false;</script>	    <style>
+		.ceo_vipbgs {
+    background: rgb(255 255 255 / 0%) !important;
+}	    </style>
+		<div class="ceo-background-muted site ceo-zz-background" >
+			<header class="header ceo-background-default" ceo-sticky>
+    <div class="navbar ceo-position-relative">
+    	<div class="ceo-container ceo-flex ceo-flex-middle ceo-position-relative ceo-logo-shou">
+    		<a href="https://pm.axuremost.cn" class="logo ceo-logo ceo-display-inline-block" alt="AxureMost 落葵网">
+    		    <div class="ceo-logo-nav-night ceo-visible@m" style="background: url(./assets/uploads/2025/01/202501232030536.png) no-repeat;background-size: 150px auto;"></div>
+    		        		    <div class="ceo-app-logo2" style="background: url(./assets/uploads/2025/01/202501232030536.png) no-repeat;background-size: 92px auto;"></div>
+                    		        		</a>
+    		
+    		<nav class="nav ceo-flex-1 ceo-position-relative ceo-visible@m"><ul id="menu-%e9%a6%96%e9%a1%b5" class="nav ceo-flex-1 ceo-margin-remove"><li id="menu-item-2973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2973"><a href="https://pm.axuremost.cn/">首页</a></li>
+<li id="menu-item-4200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4200"><a>Axure 素材</a>
+<ul class="sub-menu">
+	<li id="menu-item-11231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11231"><a href="https://pm.axuremost.cn/free">免费素材</a></li>
+	<li id="menu-item-4171" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4171"><a href="https://pm.axuremost.cn/axure">元件库</a></li>
+	<li id="menu-item-3053" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3053"><a href="https://pm.axuremost.cn/c">C端</a></li>
+	<li id="menu-item-3004" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3004"><a href="https://pm.axuremost.cn/b">B端</a></li>
+	<li id="menu-item-3054" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3054"><a href="https://pm.axuremost.cn/g">G端</a></li>
+</ul>
+</li>
+<li id="menu-item-3055" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3055"><a href="https://pm.axuremost.cn/template">Axure模板<span class="jian">  NEW  </span></a></li>
+<li id="menu-item-11233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11233"><a>工作素材<span class="jian">  Free  </span></a>
+<ul class="sub-menu">
+	<li id="menu-item-11234" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11234"><a href="https://pm.axuremost.cn/ppt">PPT 素材</a></li>
+	<li id="menu-item-11235" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11235"><a href="https://pm.axuremost.cn/excel">Excel 模板</a></li>
+	<li id="menu-item-11236" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11236"><a href="https://pm.axuremost.cn/word">Word 模板</a></li>
+</ul>
+</li>
+<li id="menu-item-5422" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5422"><a href="https://pm.axuremost.cn/maps">导图书库</a></li>
+<li id="menu-item-4113" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4113"><a href="https://pm.axuremost.cn/docs/z">知识库<span class="jian">OSS</span></a></li>
+<li id="menu-item-4373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4373"><a href="https://pm.axuremost.cn/forum">知识社区</a></li>
+<li id="menu-item-3255" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3255"><a href="https://pm.axuremost.cn/software">常用软件</a></li>
+<li id="menu-item-3280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3280"><a href="https://pm.axuremost.cn/site">资源导航</a></li>
+<li id="menu-item-9148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9148"><a href="https://pm.axuremost.cn/notice">特惠公告</a></li>
+</ul></nav>    
+    		<div class="header-info ceo-flex ceo-flex-middle">
+    		        			<a href="#header-search" class="header-search ceo-navbar-s" ceo-toggle><i class="ceofont ceoicon-search-2-line ceo-text-bolder"></i></a>
+    			    			    			        		<div id="header-search" ceo-modal>
+    <div class="ceo-tan ceo-modal-dialog ceo-modal-body home-modal ceo-padding-remove ceo-margin-auto-vertical">
+        <button class="ceo-modal-close-default" type="button" ceo-close></button>
+        <div class="b-r-12 ceo-background-default ceo-overflow-hidden ceo-position-relative ceo-padding-30px">
+            <h3>搜索</h3>
+    		<div class="search search-navbar">
+    			<form method="get" class="b-r-4 b-a ceo-form ceo-flex ceo-overflow-hidden search-form" action="https://pm.axuremost.cn">
+    				<input type="search" placeholder="输入关键字搜索" autocomplete="off" value="" name="s" required="required" class="ceo-input ceo-flex-1 ceo-text-small">
+    				<button type="submit"><i class="ceofont ceoicon-search-2-line ceo-text-bolder"></i></button>
+    			</form>
+    		</div>
+            <div class="header-btn-search">
+                <div class="header-btn-search-s ceo-dt change-color btn-search-all">搜索全站</div>
+                            </div>
+    		<div class="tags-item ceo-margin-top">
+    			<p class="ceo-margin-small-bottom ceo-text-small">热门标签：</p>
+    			<a href="https://pm.axuremost.cn/tag/%e5%9f%ba%e7%a1%80%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-529 tag-link-position-1" style="font-size: 12px;">基础教程</a>
+<a href="https://pm.axuremost.cn/tag/axure-%e7%bb%84%e4%bb%b6%e5%ba%93" class="tag-cloud-link tag-link-513 tag-link-position-2" style="font-size: 12px;">Axure 组件库</a>
+<a href="https://pm.axuremost.cn/tag/axure-%e5%85%83%e4%bb%b6%e5%ba%93" class="tag-cloud-link tag-link-514 tag-link-position-3" style="font-size: 12px;">Axure 元件库</a>
+<a href="https://pm.axuremost.cn/tag/%e9%ab%98%e7%ba%a7%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-528 tag-link-position-4" style="font-size: 12px;">高级教程</a>
+<a href="https://pm.axuremost.cn/tag/%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-532 tag-link-position-5" style="font-size: 12px;">入门教程</a>
+<a href="https://pm.axuremost.cn/tag/%e5%b7%a5%e4%bd%9c%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-531 tag-link-position-6" style="font-size: 12px;">工作教程</a>
+<a href="https://pm.axuremost.cn/tag/%e9%a1%b9%e7%9b%ae%e5%90%88%e9%9b%86" class="tag-cloud-link tag-link-483 tag-link-position-7" style="font-size: 12px;">合集</a>
+<a href="https://pm.axuremost.cn/tag/b%e7%ab%af%e9%a1%b9%e7%9b%ae" class="tag-cloud-link tag-link-480 tag-link-position-8" style="font-size: 12px;">B端</a>
+<a href="https://pm.axuremost.cn/tag/%e8%bd%af%e4%bb%b6%e4%b8%8b%e8%bd%bd" class="tag-cloud-link tag-link-530 tag-link-position-9" style="font-size: 12px;">软件下载</a>    		</div>
+		</div>
+    	<div class="home-modal-bottom">
+    	    <ul>
+    	        <li></li>
+    	        <li></li>
+    	    </ul>
+    	</div>
+	</div>
+</div>
+<script>
+    $(".btn-search-all").on("click",function () {
+        $(".search .search-form button").trigger('click')
+    })
+    $(".btn-search-category").on("click",function (event) {
+        event.preventDefault()
+        let search_s=$(".search-navbar input[name=s]").val();
+        if(!search_s){
+            return false;
+        }
+        let category_search_url='/?s='+search_s+"&cat=8092"
+        console.log(category_search_url)
+        location.href=category_search_url
+    })
+</script>        		
+        		<div id="nav_user" style="display: contents"></div>
+<script>
+    (function($){
+        $.ajax({
+            url:"//pm.axuremost.cn/wp-content/themes/ceomax-pro/nav_user.php",
+            success:function(res){
+                if(res.indexOf(res,'display')!='-1'){
+                    $("#nav_user").html(res)
+                }
+            }
+        })
+    })(jQuery)
+</script>    		</div>
+    	</div>
+    </div>
+</header><div id="primary" class="content-area docspress-wrap">
+    <main id="main" class="site-main" role="main">
+
+    <article id="post-8092" class="docspress-single docspress-single-ajax post-8092 docs type-docs status-publish hentry">
+
+        
+<div class="docspress-single-sidebar">
+    <div class="docspress-single-sidebar-wrap">
+                    <form role="search" method="get" class="docspress-search-form" action="https://pm.axuremost.cn/">
+                <input type="search" class="docspress-search-field" placeholder="输入以搜索" value="" name="s" autocomplete="off">
+                <input type="hidden" name="post_type" value="docs">
+                            </form>
+            <div class="docspress-search-form-result"></div>
+        
+                    <ul class="docspress-nav-list">
+                <li class="page_item page-item-5157 page_item_has_children"><a href="https://pm.axuremost.cn/docs/z">全链路知识库简介 <sup>[4]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-5158"><a href="https://pm.axuremost.cn/docs/z/01-2">文档背景</a></li>
+	<li class="page_item page-item-10984"><a href="https://pm.axuremost.cn/docs/z/4-2">产品经理简介</a></li>
+	<li class="page_item page-item-5181"><a href="https://pm.axuremost.cn/docs/z/02-2">B 端与C端</a></li>
+	<li class="page_item page-item-5188"><a href="https://pm.axuremost.cn/docs/z/3-2">G 端产品</a></li>
+</ul>
+</li>
+<li class="page_item page-item-4374 page_item_has_children"><a href="https://pm.axuremost.cn/docs/w">常见问题 <sup>[14]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-4377"><a href="https://pm.axuremost.cn/docs/w/01-2">新人疑问</a></li>
+	<li class="page_item page-item-4477"><a href="https://pm.axuremost.cn/docs/w/02-2">面试前思考</a></li>
+	<li class="page_item page-item-4413"><a href="https://pm.axuremost.cn/docs/w/03-2">面试自我介绍</a></li>
+	<li class="page_item page-item-4493"><a href="https://pm.axuremost.cn/docs/w/04-2">高频分级面试</a></li>
+	<li class="page_item page-item-4438"><a href="https://pm.axuremost.cn/docs/w/05-2">面试问题（实习）</a></li>
+	<li class="page_item page-item-4433"><a href="https://pm.axuremost.cn/docs/w/06-2">面试问题（初级）</a></li>
+	<li class="page_item page-item-4380"><a href="https://pm.axuremost.cn/docs/w/07-2">面试问题（高频率）</a></li>
+	<li class="page_item page-item-4500"><a href="https://pm.axuremost.cn/docs/w/08-2">面试官背后思考</a></li>
+	<li class="page_item page-item-4426"><a href="https://pm.axuremost.cn/docs/w/09-2">PM 常见名词（B端）</a></li>
+	<li class="page_item page-item-4521"><a href="https://pm.axuremost.cn/docs/w/10-2">PM 常见名词（C 端）</a></li>
+	<li class="page_item page-item-5154"><a href="https://pm.axuremost.cn/docs/w/14-2">前后端开发名词</a></li>
+	<li class="page_item page-item-4523"><a href="https://pm.axuremost.cn/docs/w/11-2">互联网黑话</a></li>
+	<li class="page_item page-item-9107"><a href="https://pm.axuremost.cn/docs/w/12-2">B 端试用期考核指标</a></li>
+	<li class="page_item page-item-9116"><a href="https://pm.axuremost.cn/docs/w/13-2">C 端试用期考核指标</a></li>
+</ul>
+</li>
+<li class="page_item page-item-4692 page_item_has_children"><a href="https://pm.axuremost.cn/docs/t">通用能力 <sup>[15]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-4850"><a href="https://pm.axuremost.cn/docs/t/01-2">桌面端UI名词</a></li>
+	<li class="page_item page-item-4858"><a href="https://pm.axuremost.cn/docs/t/02-2">移动端UI名词</a></li>
+	<li class="page_item page-item-6271 page_item_has_children"><a href="https://pm.axuremost.cn/docs/t/10-2">UI设计尺寸 <sup>[3]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-6284"><a href="https://pm.axuremost.cn/docs/t/10-2/01-2">iOS设计尺寸</a></li>
+		<li class="page_item page-item-6287"><a href="https://pm.axuremost.cn/docs/t/10-2/02-2">安卓设计尺寸</a></li>
+		<li class="page_item page-item-6289"><a href="https://pm.axuremost.cn/docs/t/10-2/03-2">B 端后台设计</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-4849"><a href="https://pm.axuremost.cn/docs/t/03-2">体验设计</a></li>
+	<li class="page_item page-item-4928"><a href="https://pm.axuremost.cn/docs/t/04-2">交互设计</a></li>
+	<li class="page_item page-item-4936"><a href="https://pm.axuremost.cn/docs/t/05-2">设计生命周期</a></li>
+	<li class="page_item page-item-4978"><a href="https://pm.axuremost.cn/docs/t/06-2">产品设计详解</a></li>
+	<li class="page_item page-item-4941"><a href="https://pm.axuremost.cn/docs/t/08-2">用户体验五要素</a></li>
+	<li class="page_item page-item-4932"><a href="https://pm.axuremost.cn/docs/t/07-2">需求层次理论</a></li>
+	<li class="page_item page-item-5009"><a href="https://pm.axuremost.cn/docs/t/09-2">需求优先级模型</a></li>
+	<li class="page_item page-item-10167"><a href="https://pm.axuremost.cn/docs/t/version">版本命名/验收规范/发版管理</a></li>
+	<li class="page_item page-item-11146"><a href="https://pm.axuremost.cn/docs/t/10-3">业务系统各种环境</a></li>
+</ul>
+</li>
+<li class="page_item page-item-4001 page_item_has_children"><a href="https://pm.axuremost.cn/docs/b">B 端-产品经理 <sup>[37]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-4002 page_item_has_children"><a href="https://pm.axuremost.cn/docs/b/i">基础篇 <sup>[5]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-4005"><a href="https://pm.axuremost.cn/docs/b/i/02-2">产品经理类型</a></li>
+		<li class="page_item page-item-4009"><a href="https://pm.axuremost.cn/docs/b/i/01-2">产品基础能力</a></li>
+		<li class="page_item page-item-4011"><a href="https://pm.axuremost.cn/docs/b/i/03-2">产品工作流程</a></li>
+		<li class="page_item page-item-4010"><a href="https://pm.axuremost.cn/docs/b/i/04-2">产品技能拼图</a></li>
+		<li class="page_item page-item-5079"><a href="https://pm.axuremost.cn/docs/b/i/05-2">IPD交付物</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-4003 page_item_has_children"><a href="https://pm.axuremost.cn/docs/b/j">晋级篇 <sup>[6]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-4675"><a href="https://pm.axuremost.cn/docs/b/j/01-2">架构图关系</a></li>
+		<li class="page_item page-item-4013"><a href="https://pm.axuremost.cn/docs/b/j/02-2">产品图架构</a></li>
+		<li class="page_item page-item-4014"><a href="https://pm.axuremost.cn/docs/b/j/03-2">业务图架构</a></li>
+		<li class="page_item page-item-4015"><a href="https://pm.axuremost.cn/docs/b/j/03-3">应用图架构</a></li>
+		<li class="page_item page-item-4887"><a href="https://pm.axuremost.cn/docs/b/j/04-2">系统架构图</a></li>
+		<li class="page_item page-item-4709"><a href="https://pm.axuremost.cn/docs/b/j/05-2">迭代规划</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-4004 page_item_has_children"><a href="https://pm.axuremost.cn/docs/b/t">提升篇 <sup>[2]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-5148"><a href="https://pm.axuremost.cn/docs/b/t/01-2">产品全貌</a></li>
+		<li class="page_item page-item-5150"><a href="https://pm.axuremost.cn/docs/b/t/02-2">团队管理</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-5529 page_item_has_children"><a href="https://pm.axuremost.cn/docs/b/w">产品文档产出 <sup>[10]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-5602"><a href="https://pm.axuremost.cn/docs/b/w/00-2">文档阅读简介</a></li>
+		<li class="page_item page-item-5531"><a href="https://pm.axuremost.cn/docs/b/w/01-2">商业需求文档（BRD）</a></li>
+		<li class="page_item page-item-5533"><a href="https://pm.axuremost.cn/docs/b/w/02-2">市场需求文档（MRD）</a></li>
+		<li class="page_item page-item-5594"><a href="https://pm.axuremost.cn/docs/b/w/03-2">产品需求文档（PRD）</a></li>
+		<li class="page_item page-item-6103"><a href="https://pm.axuremost.cn/docs/b/w/08-2">需求规格文档（SRS）</a></li>
+		<li class="page_item page-item-6125"><a href="https://pm.axuremost.cn/docs/b/w/09-2">埋点分析文档（DRD）</a></li>
+		<li class="page_item page-item-5596"><a href="https://pm.axuremost.cn/docs/b/w/04-2">需求池（DP）</a></li>
+		<li class="page_item page-item-5598"><a href="https://pm.axuremost.cn/docs/b/w/05-2">功能清单（FL）</a></li>
+		<li class="page_item page-item-5600"><a href="https://pm.axuremost.cn/docs/b/w/06-2">竞争分析报告（CAR）</a></li>
+		<li class="page_item page-item-5608"><a href="https://pm.axuremost.cn/docs/b/w/07-2">竞品分析报告（CAR）</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-5332 page_item_has_children"><a href="https://pm.axuremost.cn/docs/b/q">【0-1】全过程 <sup>[6]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-5738"><a href="https://pm.axuremost.cn/docs/b/q/01-3">市场调研与需求确认</a></li>
+		<li class="page_item page-item-5745"><a href="https://pm.axuremost.cn/docs/b/q/02-3">需求调研与分析</a></li>
+		<li class="page_item page-item-6089"><a href="https://pm.axuremost.cn/docs/b/q/03-3">产品规划与设计</a></li>
+		<li class="page_item page-item-5333"><a href="https://pm.axuremost.cn/docs/b/q/01-2">项目实施与管理</a></li>
+		<li class="page_item page-item-5334"><a href="https://pm.axuremost.cn/docs/b/q/02-2">产品上线与运营</a></li>
+		<li class="page_item page-item-5335"><a href="https://pm.axuremost.cn/docs/b/q/03-2">持续优化与迭代</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-5569 page_item_has_children"><a href="https://pm.axuremost.cn/docs/b/w-2">经典书籍推荐 <sup>[2]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-5570"><a href="https://pm.axuremost.cn/docs/b/w-2/01-2">启示录:打造用户喜爱的产品</a></li>
+		<li class="page_item page-item-5577"><a href="https://pm.axuremost.cn/docs/b/w-2/02-2">精益产品开发</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-4034 page_item_has_children current_page_ancestor"><a href="index.html">C端-产品经理 <sup>[94]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-4035 page_item_has_children"><a href="1.i.html">基础篇 <sup>[4]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-4036"><a href="1.1.leixin.html">产品经理类型</a></li>
+		<li class="page_item page-item-5201"><a href="1.2.02-2.html">产品基础能力</a></li>
+		<li class="page_item page-item-5208"><a href="1.3.03-2.html">产品工作流程</a></li>
+		<li class="page_item page-item-5221"><a href="1.4.04-2.html">产品技能拼图</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-4041 page_item_has_children"><a href="2.j.html">晋级篇 <sup>[3]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-5216"><a href="2.1.01-2.html">运营实施方案</a></li>
+		<li class="page_item page-item-5209"><a href="2.2.02-2.html">流量转化模型</a></li>
+		<li class="page_item page-item-5213"><a href="2.3.03-2.html">产品推广方法</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-4045 page_item_has_children"><a href="3.tisehng.html">提升篇 <sup>[1]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-6161"><a href="3.1.01-2.html">商业模式构建</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-6657 page_item_has_children current_page_ancestor"><a href="4.process.html">【0-1】全过程 <sup>[81]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-7565 page_item_has_children"><a href="4.1.1-2.html">用户体系篇 <sup>[17]</sup></a>
+		<ul class='children'>
+			<li class="page_item page-item-7921"><a href="4.1.1.01-2.html">构建用户体系用户感</a></li>
+			<li class="page_item page-item-7935"><a href="4.1.2.05-2.html">用户研究的底层逻辑</a></li>
+			<li class="page_item page-item-7938"><a href="4.1.3.06-2.html">构建用户体系的关键要素</a></li>
+			<li class="page_item page-item-7923"><a href="4.1.4.02-2.html">精确用户画像的方法与思考</a></li>
+			<li class="page_item page-item-7941"><a href="4.1.5.08-2.html">两种用户画像：Persona和Profil</a></li>
+			<li class="page_item page-item-7944"><a href="4.1.6.09-2.html">构建本品的用户画像</a></li>
+			<li class="page_item page-item-7947"><a href="4.1.7.10-2.html">用户画像落地</a></li>
+			<li class="page_item page-item-7951"><a href="4.1.8.11-2.html">用户画像必须避免的坑</a></li>
+			<li class="page_item page-item-7925"><a href="4.1.9.03-2.html">用户标签体系积木</a></li>
+			<li class="page_item page-item-7954"><a href="4.1.10.12-2.html">用户标签的三个基础类别</a></li>
+			<li class="page_item page-item-7957"><a href="4.1.11.13-2.html">产出可用的用户标签</a></li>
+			<li class="page_item page-item-7960"><a href="4.1.12.14-2.html">构建适用公司的用户标签体系</a></li>
+			<li class="page_item page-item-7927"><a href="4.1.13.04-2.html">用户的分群图纸</a></li>
+			<li class="page_item page-item-7962"><a href="4.1.14.15-2.html">递进用户模型AARRR</a></li>
+			<li class="page_item page-item-7965"><a href="4.1.15.16-2.html">平行用户模型RFM</a></li>
+			<li class="page_item page-item-7967"><a href="4.1.16.17-2.html">构建用户模型</a></li>
+			<li class="page_item page-item-7969"><a href="4.1.17.18-2.html">业务导向的用户体系</a></li>
+		</ul>
+</li>
+		<li class="page_item page-item-7566 page_item_has_children current_page_ancestor current_page_parent"><a href="4.2.2-2.html">数据指标篇 <sup>[37]</sup></a>
+		<ul class='children'>
+			<li class="page_item page-item-8033"><a href="4.2.1.01-2.html">数据的价值</a></li>
+			<li class="page_item page-item-8035"><a href="4.2.2.02-2.html">数据知识地图与进阶路线</a></li>
+			<li class="page_item page-item-8037"><a href="4.2.3.03-2.html">构建指标体系的价值</a></li>
+			<li class="page_item page-item-8039"><a href="4.2.4.04-2.html">指标体系的概念与组成要素</a></li>
+			<li class="page_item page-item-8041"><a href="4.2.5.05-2.html">指标与标签</a></li>
+			<li class="page_item page-item-8055"><a href="4.2.6.06-2.html">业务方向北极星指标</a></li>
+			<li class="page_item page-item-8057"><a href="4.2.7.07-2.html">数据产品虚荣指标</a></li>
+			<li class="page_item page-item-8059"><a href="4.2.8.08-2.html">有效用户注册指标</a></li>
+			<li class="page_item page-item-8061"><a href="4.2.9.09-2.html">注册用户活跃指标</a></li>
+			<li class="page_item page-item-8063"><a href="4.2.10.10-2.html">精准定义留存指标</a></li>
+			<li class="page_item page-item-8065"><a href="4.2.11.11-2.html">如何构建指标体系</a></li>
+			<li class="page_item page-item-8067"><a href="4.2.12.12-2.html">电商指标体系搭建</a></li>
+			<li class="page_item page-item-8069"><a href="4.2.13.13-2.html">数据分析工具</a></li>
+			<li class="page_item page-item-8071"><a href="4.2.14.14-2.html">数据分析常用方法</a></li>
+			<li class="page_item page-item-8073"><a href="4.2.15.15-2.html">常用描述性统计</a></li>
+			<li class="page_item page-item-8076"><a href="4.2.16.16-2.html">描述性统计工具</a></li>
+			<li class="page_item page-item-8078"><a href="4.2.17.17-2.html">获客渠道分析方法</a></li>
+			<li class="page_item page-item-8080"><a href="4.2.18.18-2.html">平台每日获客分析</a></li>
+			<li class="page_item page-item-8082"><a href="4.2.19.19-2.html">漏斗模型基本知识</a></li>
+			<li class="page_item page-item-8084"><a href="4.2.20.20-2.html">漏斗分析使用流程</a></li>
+			<li class="page_item page-item-8086"><a href="4.2.21.21-2.html">漏斗分析提升购买力</a></li>
+			<li class="page_item page-item-8088"><a href="4.2.22.22-2.html">指标口径定位问题</a></li>
+			<li class="page_item page-item-8090"><a href="4.2.23.23-2.html">指标维度分析问题</a></li>
+			<li class="page_item page-item-8092 current_page_item"><a href="4.2.24.24-2.html" aria-current="page">相关性分析定义作用</a></li>
+			<li class="page_item page-item-8094"><a href="4.2.25.25-2.html">利用P值评估相关性</a></li>
+			<li class="page_item page-item-8096"><a href="4.2.26.26-2.html">客群贡献相关性分析</a></li>
+			<li class="page_item page-item-8098"><a href="4.2.27.27-2.html">渠道转化率相关性分析</a></li>
+			<li class="page_item page-item-8100"><a href="4.2.28.28-2.html">DAU影响因素相关性分析</a></li>
+			<li class="page_item page-item-8102"><a href="4.2.29.29-2.html">相关性分析其他方法</a></li>
+			<li class="page_item page-item-8104"><a href="4.2.30.30-2.html">方差分析介绍与作用</a></li>
+			<li class="page_item page-item-8106"><a href="4.2.31.31-2.html">方差分析步骤实操</a></li>
+			<li class="page_item page-item-8109"><a href="4.2.32.32-2.html">假设检验常见方法</a></li>
+			<li class="page_item page-item-8111"><a href="4.2.33.33-2.html">单尾检验的流程与案例</a></li>
+			<li class="page_item page-item-8113"><a href="4.2.34.34-2.html">双尾检验的流程与案例</a></li>
+			<li class="page_item page-item-8115"><a href="4.2.35.35-2.html">假设检验AB测试</a></li>
+			<li class="page_item page-item-8120"><a href="4.2.36.36-2.html">时间序列预测</a></li>
+			<li class="page_item page-item-8122"><a href="4.2.37.37-2.html">回归分析预测</a></li>
+		</ul>
+</li>
+		<li class="page_item page-item-7567 page_item_has_children"><a href="4.3.4-2.html">商业分析篇 <sup>[11]</sup></a>
+		<ul class='children'>
+			<li class="page_item page-item-8124"><a href="4.3.1.01-2.html">商业分析定义与内容</a></li>
+			<li class="page_item page-item-8126"><a href="4.3.2.02-2.html">商业模型画布解析</a></li>
+			<li class="page_item page-item-8128"><a href="4.3.3.03-2.html">常见商业模式</a></li>
+			<li class="page_item page-item-8130"><a href="4.3.4.04-2.html">MVP验证商业模式</a></li>
+			<li class="page_item page-item-8132"><a href="4.3.5.05-2.html">北极星指标提升收入增长</a></li>
+			<li class="page_item page-item-8134"><a href="4.3.6.06-2.html">主流变现模式公式拆解</a></li>
+			<li class="page_item page-item-8136"><a href="4.3.7.07-2.html">ROI指标提高商业增长</a></li>
+			<li class="page_item page-item-8138"><a href="4.3.8.08-2.html">常见的的定价方法</a></li>
+			<li class="page_item page-item-8140"><a href="4.3.9.09-2.html">产品定价的周期变化</a></li>
+			<li class="page_item page-item-8142"><a href="4.3.10.10-2.html">商业画布第二曲线</a></li>
+			<li class="page_item page-item-8144"><a href="4.3.11.11-2.html">第二曲线可行性</a></li>
+		</ul>
+</li>
+		<li class="page_item page-item-7568 page_item_has_children"><a href="4.4.3-2.html">用户增长篇 <sup>[12]</sup></a>
+		<ul class='children'>
+			<li class="page_item page-item-8150"><a href="4.4.1.01-2.html">用户增长的概念与作用</a></li>
+			<li class="page_item page-item-8152"><a href="4.4.2.02-2.html">用户价值公式</a></li>
+			<li class="page_item page-item-8154"><a href="4.4.3.03-2.html">获客的良性指标</a></li>
+			<li class="page_item page-item-8156"><a href="4.4.4.04-2.html">获取用户的4W1H</a></li>
+			<li class="page_item page-item-8158"><a href="4.4.5.05-2.html">冷启动与发展期获客</a></li>
+			<li class="page_item page-item-8160"><a href="4.4.6.06-2.html">成熟期获客方式</a></li>
+			<li class="page_item page-item-8162"><a href="4.4.7.07-2.html">用户留存表现与构成</a></li>
+			<li class="page_item page-item-8164"><a href="4.4.8.08-2.html">HOOK模型提升用户留存</a></li>
+			<li class="page_item page-item-8166"><a href="4.4.9.09-2.html">用户召回常见方法</a></li>
+			<li class="page_item page-item-8168"><a href="4.4.10.10-2.html">流量红利</a></li>
+			<li class="page_item page-item-8170"><a href="4.4.11.11-2.html">产品/渠道/玩法红利</a></li>
+			<li class="page_item page-item-8172"><a href="4.4.12.12-2.html">A-B测试实现用户增长</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li class="page_item page-item-5611"><a href="5.w.html">产品文档产出</a></li>
+</ul>
+</li>
+<li class="page_item page-item-4467 page_item_has_children"><a href="https://pm.axuremost.cn/docs/y">产品运营 <sup>[84]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-7529 page_item_has_children"><a href="https://pm.axuremost.cn/docs/y/5-2">基础知识 <sup>[4]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-7546"><a href="https://pm.axuremost.cn/docs/y/5-2/1-2">运营的核心</a></li>
+		<li class="page_item page-item-7548"><a href="https://pm.axuremost.cn/docs/y/5-2/2-2">不同产品的运营核心</a></li>
+		<li class="page_item page-item-7550"><a href="https://pm.axuremost.cn/docs/y/5-2/3-2">微信、淘宝、微博等产品的运营核心</a></li>
+		<li class="page_item page-item-7552"><a href="https://pm.axuremost.cn/docs/y/5-2/4-2">运营基础sense</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-7533 page_item_has_children"><a href="https://pm.axuremost.cn/docs/y/6-2">互联网运营 <sup>[4]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-7537"><a href="https://pm.axuremost.cn/docs/y/6-2/1-2">案例-小米用户运营</a></li>
+		<li class="page_item page-item-7540"><a href="https://pm.axuremost.cn/docs/y/6-2/2-2">案例-京东数据运营</a></li>
+		<li class="page_item page-item-7542"><a href="https://pm.axuremost.cn/docs/y/6-2/3-2">案例-无印良品流程运营</a></li>
+		<li class="page_item page-item-7544"><a href="https://pm.axuremost.cn/docs/y/6-2/4-2">案例-杜蕾斯内容运营</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-7554 page_item_has_children"><a href="https://pm.axuremost.cn/docs/y/7-2">数据运营 <sup>[1]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-7557"><a href="https://pm.axuremost.cn/docs/y/7-2/1-2">基础数据指标</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-4472 page_item_has_children"><a href="https://pm.axuremost.cn/docs/y/01-2">用户运营 <sup>[4]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-8543"><a href="https://pm.axuremost.cn/docs/y/01-2/01-2">用户运营的本质</a></li>
+		<li class="page_item page-item-8545"><a href="https://pm.axuremost.cn/docs/y/01-2/02-2">用户分层与精细化运营</a></li>
+		<li class="page_item page-item-8553"><a href="https://pm.axuremost.cn/docs/y/01-2/03-2">生命周期与用户成长路径</a></li>
+		<li class="page_item page-item-8556"><a href="https://pm.axuremost.cn/docs/y/01-2/04-2">用户行为激励与激励体系</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-4473 page_item_has_children"><a href="https://pm.axuremost.cn/docs/y/02-2">活动运营 <sup>[15]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-8668"><a href="https://pm.axuremost.cn/docs/y/02-2/01-2">基本工作</a></li>
+		<li class="page_item page-item-8671"><a href="https://pm.axuremost.cn/docs/y/02-2/02-2">拆解目标</a></li>
+		<li class="page_item page-item-8674"><a href="https://pm.axuremost.cn/docs/y/02-2/03-2">明确目标</a></li>
+		<li class="page_item page-item-8677"><a href="https://pm.axuremost.cn/docs/y/02-2/04-2">主线玩法</a></li>
+		<li class="page_item page-item-8681"><a href="https://pm.axuremost.cn/docs/y/02-2/05-2">支线玩法</a></li>
+		<li class="page_item page-item-8684"><a href="https://pm.axuremost.cn/docs/y/02-2/06-2">活动上线</a></li>
+		<li class="page_item page-item-8687"><a href="https://pm.axuremost.cn/docs/y/02-2/07-2">预热推广</a></li>
+		<li class="page_item page-item-8690"><a href="https://pm.axuremost.cn/docs/y/02-2/08-2">监测优化</a></li>
+		<li class="page_item page-item-8693"><a href="https://pm.axuremost.cn/docs/y/02-2/09-2">放大收尾</a></li>
+		<li class="page_item page-item-8696"><a href="https://pm.axuremost.cn/docs/y/02-2/10-2">互动秘诀</a></li>
+		<li class="page_item page-item-8699"><a href="https://pm.axuremost.cn/docs/y/02-2/11-2">活动类型对比</a></li>
+		<li class="page_item page-item-8702"><a href="https://pm.axuremost.cn/docs/y/02-2/12-2">活动流程对比</a></li>
+		<li class="page_item page-item-8705"><a href="https://pm.axuremost.cn/docs/y/02-2/13-2">风险点预防</a></li>
+		<li class="page_item page-item-8708"><a href="https://pm.axuremost.cn/docs/y/02-2/14-2">着陆页介绍</a></li>
+		<li class="page_item page-item-8712"><a href="https://pm.axuremost.cn/docs/y/02-2/15-2">着陆页技巧</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-4474 page_item_has_children"><a href="https://pm.axuremost.cn/docs/y/03-2">社群运营 <sup>[20]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-8559"><a href="https://pm.axuremost.cn/docs/y/03-2/01-2">引流裂变</a></li>
+		<li class="page_item page-item-8602"><a href="https://pm.axuremost.cn/docs/y/03-2/02-2">获客引流</a></li>
+		<li class="page_item page-item-8605"><a href="https://pm.axuremost.cn/docs/y/03-2/03-2">噱头诱饵</a></li>
+		<li class="page_item page-item-8609"><a href="https://pm.axuremost.cn/docs/y/03-2/04-2">裂变准备</a></li>
+		<li class="page_item page-item-8612"><a href="https://pm.axuremost.cn/docs/y/03-2/05-2">人性引爆</a></li>
+		<li class="page_item page-item-8615"><a href="https://pm.axuremost.cn/docs/y/03-2/06-2">活动策划</a></li>
+		<li class="page_item page-item-8618"><a href="https://pm.axuremost.cn/docs/y/03-2/07-2">留存转化</a></li>
+		<li class="page_item page-item-8621"><a href="https://pm.axuremost.cn/docs/y/03-2/08-2">运营粘性</a></li>
+		<li class="page_item page-item-8624"><a href="https://pm.axuremost.cn/docs/y/03-2/09-2">节奏痛点</a></li>
+		<li class="page_item page-item-8627"><a href="https://pm.axuremost.cn/docs/y/03-2/10-2">精准群创建</a></li>
+		<li class="page_item page-item-8631"><a href="https://pm.axuremost.cn/docs/y/03-2/11-2">个人 IP</a></li>
+		<li class="page_item page-item-8634"><a href="https://pm.axuremost.cn/docs/y/03-2/12-2">IP 变现</a></li>
+		<li class="page_item page-item-8637"><a href="https://pm.axuremost.cn/docs/y/03-2/13-2">千人千面</a></li>
+		<li class="page_item page-item-8642"><a href="https://pm.axuremost.cn/docs/y/03-2/14-2">朋友圈营销</a></li>
+		<li class="page_item page-item-8647"><a href="https://pm.axuremost.cn/docs/y/03-2/15-2">惊喜营销</a></li>
+		<li class="page_item page-item-8650"><a href="https://pm.axuremost.cn/docs/y/03-2/16-2">会员体系</a></li>
+		<li class="page_item page-item-8655"><a href="https://pm.axuremost.cn/docs/y/03-2/17-2">分销商</a></li>
+		<li class="page_item page-item-8658"><a href="https://pm.axuremost.cn/docs/y/03-2/18-2">产品裂变</a></li>
+		<li class="page_item page-item-8661"><a href="https://pm.axuremost.cn/docs/y/03-2/19-2">社群工具</a></li>
+		<li class="page_item page-item-8664"><a href="https://pm.axuremost.cn/docs/y/03-2/20-2">养号安全</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-4475 page_item_has_children"><a href="https://pm.axuremost.cn/docs/y/04-2">新媒体运营 <sup>[9]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-7024"><a href="https://pm.axuremost.cn/docs/y/04-2/01-2">新媒体入门</a></li>
+		<li class="page_item page-item-7025"><a href="https://pm.axuremost.cn/docs/y/04-2/02-2">文章选题与素材</a></li>
+		<li class="page_item page-item-7026"><a href="https://pm.axuremost.cn/docs/y/04-2/03-2">文章排版</a></li>
+		<li class="page_item page-item-7028"><a href="https://pm.axuremost.cn/docs/y/04-2/04-2">活动策划</a></li>
+		<li class="page_item page-item-8486"><a href="https://pm.axuremost.cn/docs/y/04-2/5-2">流程设计要点</a></li>
+		<li class="page_item page-item-7029"><a href="https://pm.axuremost.cn/docs/y/04-2/6-2">矩阵运营</a></li>
+		<li class="page_item page-item-7030"><a href="https://pm.axuremost.cn/docs/y/04-2/7-2">微信公众号运营</a></li>
+		<li class="page_item page-item-8498"><a href="https://pm.axuremost.cn/docs/y/04-2/8-2">生产高质量内容</a></li>
+		<li class="page_item page-item-8501"><a href="https://pm.axuremost.cn/docs/y/04-2/9-2">用户增长</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-6136 page_item_has_children"><a href="https://pm.axuremost.cn/docs/y/05-2">【0-1】新产品运营体系 <sup>[19]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-8174"><a href="https://pm.axuremost.cn/docs/y/05-2/07-3">产品运营定位与作用</a></li>
+		<li class="page_item page-item-8184"><a href="https://pm.axuremost.cn/docs/y/05-2/08-2">导入期的产品运营MVP</a></li>
+		<li class="page_item page-item-8187"><a href="https://pm.axuremost.cn/docs/y/05-2/09-2">运营标准化的基础SOP</a></li>
+		<li class="page_item page-item-8190"><a href="https://pm.axuremost.cn/docs/y/05-2/10-2">标准SOP的与注意事项</a></li>
+		<li class="page_item page-item-8193"><a href="https://pm.axuremost.cn/docs/y/05-2/11-2">产品解决方案</a></li>
+		<li class="page_item page-item-8196"><a href="https://pm.axuremost.cn/docs/y/05-2/12-2">品牌化运营</a></li>
+		<li class="page_item page-item-8199"><a href="https://pm.axuremost.cn/docs/y/05-2/13-2">运营项目流程搭建</a></li>
+		<li class="page_item page-item-8202"><a href="https://pm.axuremost.cn/docs/y/05-2/14-2">运营工作的产品化</a></li>
+		<li class="page_item page-item-8205"><a href="https://pm.axuremost.cn/docs/y/05-2/15-2">日常运营产品化</a></li>
+		<li class="page_item page-item-8208"><a href="https://pm.axuremost.cn/docs/y/05-2/16-2">运营流程产品化</a></li>
+		<li class="page_item page-item-8211"><a href="https://pm.axuremost.cn/docs/y/05-2/17-2">数据驱动产品化</a></li>
+		<li class="page_item page-item-8214"><a href="https://pm.axuremost.cn/docs/y/05-2/18-2">产品运营中台化</a></li>
+		<li class="page_item page-item-7223"><a href="https://pm.axuremost.cn/docs/y/05-2/07-2">运营地图</a></li>
+		<li class="page_item page-item-6145"><a href="https://pm.axuremost.cn/docs/y/05-2/01-2">用户激励体系</a></li>
+		<li class="page_item page-item-6147"><a href="https://pm.axuremost.cn/docs/y/05-2/02-2">会员体系</a></li>
+		<li class="page_item page-item-6149"><a href="https://pm.axuremost.cn/docs/y/05-2/03-2">等级体系</a></li>
+		<li class="page_item page-item-6151"><a href="https://pm.axuremost.cn/docs/y/05-2/04-2">积分体系</a></li>
+		<li class="page_item page-item-6153"><a href="https://pm.axuremost.cn/docs/y/05-2/05-2">任务体系</a></li>
+		<li class="page_item page-item-6155"><a href="https://pm.axuremost.cn/docs/y/05-2/06-2">数据驱动运营体系</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-5324 page_item_has_children"><a href="https://pm.axuremost.cn/docs/project">项目经理 <sup>[21]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-6225"><a href="https://pm.axuremost.cn/docs/project/01-2">简介</a></li>
+	<li class="page_item page-item-6232"><a href="https://pm.axuremost.cn/docs/project/02-2">简历</a></li>
+	<li class="page_item page-item-6243 page_item_has_children"><a href="https://pm.axuremost.cn/docs/project/04-2">项目启动阶段 <sup>[2]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-6253"><a href="https://pm.axuremost.cn/docs/project/04-2/01-2">立项建议书</a></li>
+		<li class="page_item page-item-6471"><a href="https://pm.axuremost.cn/docs/project/04-2/02-2">初步解决方案或建议书</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-6213 page_item_has_children"><a href="https://pm.axuremost.cn/docs/project/planning">规划阶段 <sup>[3]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-6478"><a href="https://pm.axuremost.cn/docs/project/planning/01-2">项目计划书</a></li>
+		<li class="page_item page-item-6479"><a href="https://pm.axuremost.cn/docs/project/planning/02-2">需求规格说明书</a></li>
+		<li class="page_item page-item-6480"><a href="https://pm.axuremost.cn/docs/project/planning/03-2">项目风险管理计划</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-6214 page_item_has_children"><a href="https://pm.axuremost.cn/docs/project/execute">执行阶段 <sup>[4]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-6481"><a href="https://pm.axuremost.cn/docs/project/execute/01-2">项目设计文档</a></li>
+		<li class="page_item page-item-6482"><a href="https://pm.axuremost.cn/docs/project/execute/02-2">测试报告</a></li>
+		<li class="page_item page-item-6483"><a href="https://pm.axuremost.cn/docs/project/execute/03-2">用户手册</a></li>
+		<li class="page_item page-item-6484"><a href="https://pm.axuremost.cn/docs/project/execute/04-2">系统维护手册</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-6221 page_item_has_children"><a href="https://pm.axuremost.cn/docs/project/monitor">监控与控制阶段 <sup>[2]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-6485"><a href="https://pm.axuremost.cn/docs/project/monitor/01-2">项目进度报告</a></li>
+		<li class="page_item page-item-6486"><a href="https://pm.axuremost.cn/docs/project/monitor/02-2">变更请求和变更日志</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-6222 page_item_has_children"><a href="https://pm.axuremost.cn/docs/project/closure">收尾阶段 <sup>[3]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-6487"><a href="https://pm.axuremost.cn/docs/project/closure/01-2">项目总结报告</a></li>
+		<li class="page_item page-item-6488"><a href="https://pm.axuremost.cn/docs/project/closure/02-2">项目交付文档</a></li>
+		<li class="page_item page-item-6489"><a href="https://pm.axuremost.cn/docs/project/closure/03-2">维护和支持计划</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+            </ul>
+            </div>
+</div>
+
+        <div class="docspress-single-content">
+            
+<ul class="docspress-single-breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://pm.axuremost.cn/"><span itemprop="name">主页</span></a>
+            <meta itemprop="position" content="1" />
+        </li>
+                        <li class="delimiter"> / </li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://pm.axuremost.cn/docs"><span itemprop="name">知识库</span></a>
+            <meta itemprop="position" content="2" />
+        </li>
+                        <li class="delimiter"> / </li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="index.html"><span itemprop="name">C端-产品经理</span></a>
+            <meta itemprop="position" content="3" />
+        </li>
+                        <li class="delimiter"> / </li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="4.process.html"><span itemprop="name">【0-1】全过程</span></a>
+            <meta itemprop="position" content="4" />
+        </li>
+                        <li class="delimiter"> / </li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="4.2.2-2.html"><span itemprop="name">数据指标篇</span></a>
+            <meta itemprop="position" content="5" />
+        </li>
+    </ul>
+<header class="entry-header">
+    <h1 class="entry-title" itemprop="headline">相关性分析定义作用</h1></header><!-- .entry-header -->
+
+            <div class="entry-content">
+                <p><a fetchpriority="high" decoding="async" class="size-full wp-image-9428 alignnone" href="./assets/uploads/2024/11/2025011723425569.png" data-fancybox="images" data-fancybox="gallery"><img alt="相关性分析定义作用" fetchpriority="high" decoding="async" class="size-full wp-image-9428 alignnone" src="./assets/uploads/2024/11/2025011723425569.png" alt="" width="1411" height="751" /></a></p>
+<blockquote>
+<div><strong>相关性分析介绍</strong></div>
+</blockquote>
+<p><strong>定义</strong></p>
+<p>相关性分析是一种统计方法，用于研究两个或多个变量之间的关联程度。它衡量的是变量之间线性关系的强度和方向。例如，在研究学生成绩与学习时间的关系时，相关性分析可以告诉我们随着学习时间的增加，成绩是否会相应提高，以及这种关系的紧密程度。</p>
+<pre><strong>常用方法和指标</strong></pre>
+<ul>
+<li><strong>皮尔逊相关系数（Pearson Correlation Coefficient）</strong></li>
+</ul>
+<p>这是最常用的相关性指标之一，适用于连续变量。它的取值范围是[-1, 1]。当相关系数为1时，表示两个变量完全正相关，即一个变量增加，另一个变量也会按比例增加；当系数为 -1时，表示完全负相关，一个变量增加，另一个变量会按比例减少；当系数为0时，表示两个变量之间不存在线性相关关系。例如，在分析身高和体重的关系时，可能会得到一个正的皮尔逊相关系数，说明身高和体重通常是正相关的。</p>
+<ul>
+<li><strong>斯皮尔曼等级相关系数（Spearman&#8217;s Rank Correlation Coefficient）</strong></li>
+</ul>
+<p>主要用于衡量变量的等级（排序）之间的相关性，不要求变量是连续的，也不要求变量之间是严格的线性关系。对于存在非线性关系或者变量是有序分类数据的情况比较适用。例如，在分析比赛中选手的排名与评委评分的关系时，即使评委评分和选手排名之间的关系不是线性的，斯皮尔曼等级相关系数也可以很好地衡量它们之间的关联程度。</p>
+<blockquote>
+<div><strong>相关性分析的作用</strong></div>
+</blockquote>
+<pre><strong>理解数据关系</strong></pre>
+<ul>
+<li><strong>发现潜在关联</strong>：帮助数据产品人员在复杂的数据中挖掘变量之间的隐藏关系。例如，在电商平台的数据产品中，通过相关性分析可以发现用户的购买频率和用户对平台的忠诚度积分之间的关系。如果发现两者具有较强的正相关性，这就表明忠诚度积分计划可能在促进用户购买方面起到了积极作用。</li>
+<li><strong>量化关系强度和方向</strong>：不仅能确定变量之间是否有关联，还能精确地量化这种关联的程度和方向。以用户年龄和在某类电子产品上的消费金额为例，通过计算相关系数，如果得到0.7，就可以知道两者存在较强的正相关关系，并且可以进一步推断出随着年龄的增长，用户在该类电子产品上的消费金额有较大可能会增加。这种量化的信息对于深入理解数据和做出决策非常重要。</li>
+</ul>
+<pre><strong>特征选择与模型构建</strong></pre>
+<ul>
+<li><strong>特征筛选</strong>：在构建数据产品相关的预测模型（如机器学习模型）时，通常会面临大量的潜在特征（变量）。相关性分析可以作为一种有效的特征选择工具，帮助筛选出与目标变量高度相关的特征。例如，在构建一个预测用户是否会购买某产品的模型时，通过相关性分析发现用户的历史购买记录、浏览产品详情页的次数、加入购物车的次数等特征与购买行为高度相关，而用户的注册时间等特征相关性较低，就可以考虑将相关性低的特征排除在模型之外，从而减少模型的复杂度，提高模型的训练效率和预测准确性。</li>
+<li><strong>处理共线性问题</strong>：能够识别出相互之间高度相关的特征组，避免在模型中引入多重共线性问题。例如，在分析网站流量数据时，如果发现页面停留时间和浏览页面数量这两个特征高度相关，同时将它们放入回归模型中可能会导致模型不稳定和不准确。通过相关性分析，可以只选择其中一个特征，或者对它们进行适当的处理（如主成分分析）后再放入模型，以确保模型的可靠性。</li>
+<li><strong>模型验证</strong>：相关性分析还可以作为模型验证的一种手段。在模型构建完成后，通过计算模型预测结果与实际结果之间的相关性，来评估模型的有效性。例如，对于一个预测股票价格走势的模型，计算模型预测的价格变化与实际价格变化之间的相关系数，如果相关系数较高，说明模型能够较好地捕捉价格的变化趋势，具有一定的预测能力；反之，如果相关系数较低，则可能需要对模型进行调整和优化。</li>
+</ul>
+<pre><strong>数据驱动决策</strong></pre>
+<ul>
+<li><strong>优化产品和服务策略</strong>：通过相关性分析可以为产品优化提供依据。例如，在分析一款移动应用的数据时，发现用户对某一功能的使用频率与用户的满意度之间存在较强的正相关性，但该功能的用户评分较低，这就提示产品团队需要对这个功能进行优化，以提高用户满意度。同时，相关性分析也可以帮助优化服务策略。例如，在客户服务数据中，如果发现客户等待客服响应时间与客户满意度之间存在较强的负相关性，那么就可以通过缩短响应时间来提高客户满意度。</li>
+<li><strong>营销和资源分配决策</strong>：可以指导营销活动和资源分配。如果发现广告投放渠道与产品购买转化率之间存在显著的正相关关系，企业就可以加大在该渠道的广告投入，以提高销售业绩。例如，通过分析发现社交媒体广告与某时尚品牌的购买转化率之间的相关性高达0.8，企业就可以考虑将更多的营销预算分配到社交媒体广告上。同样，在市场细分和定位方面，相关性分析可以帮助企业了解不同客户群体特征与购买行为之间的关系，从而更精准地进行营销活动。</li>
+<li><strong>风险评估和管理</strong>：在金融领域，相关性分析用于评估投资组合的风险。例如，计算不同股票之间的相关性，若两只股票高度正相关，那么同时持有这两只股票的风险分散效果就较差。通过相关性分析，投资者可以构建一个包含相关性较低的资产组合，降低整体风险。在信用风险评估中，分析借款人的各种财务指标和信用记录之间的相关性，来预测违约风险。例如，发现借款人的债务收入比与违约概率之间存在较强的正相关关系，金融机构在评估贷款申请时就可以重点关注这一指标，加强风险管控。</li>
+</ul>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+            </div><!-- .entry-content -->
+
+            
+<footer class="entry-footer">
+    <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <meta itemprop="name" content="most" />
+        <meta itemprop="url" content="https://pm.axuremost.cn/author/admin" />
+    </div>
+
+    <meta itemprop="datePublished" content="2024-11-20T14:33:54+08:00"/>
+    <time itemprop="dateModified" datetime="2025-01-17T23:43:00+08:00">
+        最后修改于 2025年1月17日    </time>
+</footer>
+    <nav class="docspress-single-adjacent-nav">
+        <h3 class="docspress-sr-only">文档导航</h3>
+                    <span class="nav-previous">
+                <a href="4.2.23.23-2.html" class="docspress-btn docspress-btn-md"><span class="icon">&lt;</span> 指标维度分析问题</a>
+            </span>
+        
+                    <span class="nav-next">
+                <a href="4.2.25.25-2.html" class="docspress-btn docspress-btn-md">利用P值评估相关性 <span class="icon">&gt;</span></a>
+            </span>
+            </nav>
+    
+
+<div id="comments" class="comments b-a b-r-6 ceo-background-default ceo-margin-bottom">
+	<div class="comments-title module-title b-b ceo-flex ceo-flex-middle">
+		<span class="ceo-flex-1 ceo-position-relative"><i class="ceofont ceoicon-discuss-line"></i> 发表评论</span>
+		<div class="">
+			<small class="ceo-text-small ceo-text-muted">暂无评论</small>		</div>
+	</div>
+	<div class="comment-list">
+		<div id="respond" class="ceo-flex comment-from">
+			<div class="avatar ceo-margin-right">
+								<img alt='' src='//pm.axuremost.cn/wp-content/themes/ceomax-pro/static/images/avatar.png' srcset='//pm.axuremost.cn/wp-content/themes/ceomax-pro/static/images/avatar.png 2x' class='avatar avatar-46 photo avatar-default' height='46' width='46' decoding='async'/>							</div>
+			<form action="https://pm.axuremost.cn/wp-comments-post.php" method="post" class="ceo-form ceo-width-1-1 post-comment">
+								<textarea name="comment" id="comment" rows="3" class="b-r-4 ceo-textarea ceo-width-1-1 ceo-text-small ceo-margin-bottom" readonly="readonly" placeholder="请登录后发布评论..." disabled></textarea>
+				<a href="#modal-login" class="ceo-button change-color btn b-r-4" ceo-toggle>登录后评论</a>
+							</form>
+		</div>
+
+				<!-- 评论已关闭 -->
+			</div>
+</div>        </div><!-- .docspress-single-content -->
+    </article><!-- #post-## -->
+        </main>
+</div>
+			<!--跟随-->
+			
+<div class="wapnone ceo_follow_service" style="top:45%">
+    <!--活动按钮-->
+        <div class="ceo-footer-sidebar-girl animated">
+        <a href="/vip" target="_blank">
+            <img class="girl" src="./assets/uploads/2024/06/vip.png">
+            <div class="livechat-hint rd-notice-tooltip rd-notice-type-success rd-notice-position-left single-line show_hint">
+                <div class="rd-notice-content">终身VIP会员限时钜惠</div>
+            </div>
+            <div class="animated-circles">
+                <div class="circle c-1"></div>
+                <div class="circle c-2"></div>
+                <div class="circle c-3"></div>
+            </div>
+        </a>
+    </div>
+        <!--侧边栏跟随客服---->
+	<ul>
+	    	                    
+                
+	    
+				<li class="ceo_follow_service_box ceo_follow_service_qr ceo_footer_s">
+		    <a href="javacript:;"><i class="ceofont ceoicon-wechat-fill"></i>
+			<div class="ceo_follow_service_qr_cont">
+			    <span class="ceo_follow_service_triangle"></span>
+				<div class="ceo_follow_service_qrimg">
+				    <span class="ceo_follow_service_qrimg_site" style="background: url(./assets/uploads/2025/08/2025080119254184.png)"></span>
+				    微信客服				</div>
+				<div class="ceo_follow_service_qrtext">
+				    <span>AxureMost.cn</span>
+				</div>
+			</div>
+			</a>
+		</li>
+		
+						<li class="ceo_follow_service_box ceo_follow_service_ax ceo_footer_s">
+		    <a href="https://qun.qq.com/qqweb/qunpro/share?_wv=3&amp;_wwv=128&amp;appChannel=share&amp;biz=ka&amp;businessType=5&amp;from=246611&amp;inviteCode=23bV5oOYHUp&amp;mainSourceId=qr_code&amp;subSourceId=pic4&amp;jumpsource=shorturl#/out" target="_blank"><i class="ceofont ceoicon-message-3-fill"></i>
+			<div class="ceo_follow_service_ax_cont"> <span class="ceo_follow_service_triangle"></span> QQ 频道 </div>
+			</a>
+		</li>
+				
+		<li class="ceo_follow_service_box ceo_follow_service_ax goTop ceo_footer_s">
+		    <a href="#header" class="ceo-display-block" ceo-scroll><i class="ceofont ceoicon-arrow-up-s-line"></i>
+			<div class="ceo_follow_service_ax_cont"> <span class="ceo_follow_service_triangle"></span> <span> 返回顶部 </span> </div>
+			</a>
+		</li>
+	</ul>
+</div>
+<!--侧边栏跟随客服---->
+<div class="ceo-app-gotop gotops ceo-hidden@s" id="gotops">
+    <a href="#header" class="ceo-display-block" ceo-scroll>
+        <i class="ceofont ceoicon-arrow-up-s-line"></i>
+    </a>
+</div>			<!--Banner-->
+						<!--基础-->
+			<footer class="footer ceo-background-secondary">
+			    				<div class="foot ceo-container ceo-padding">
+					<div class="ceo-grid" ceo-grid>
+						<div class="ceo-width-1-1@s ceo-width-1-3@xl">
+							<div class="foot-item foot-item-first ceo-position-relative">
+								<a href="" target="_blank" class="foot-logo ceo-display-block"><img src="./assets/uploads/2024/06/大-logo.png"></a>
+								<p class="ceo-text-small">AxureMost 落葵网涵盖全范围 PM 链路学习资料，专注工作产出。
+</p>
+							</div>
+						</div>
+						<div class="ceo-width-2-3 ceo-visible@s">
+							<div class="ceo-grid" ceo-grid>
+																<div class="ceo-width-1-3">
+									<div class="foot-item">
+										<div class="foot-item-title"><i class="ceofont ceoicon-building-2-fill"></i>快捷导航</div>
+										<ul class="ceo-padding-remove">
+																																	<li><a href="https://axuremost.cn/" target="_blank">总站</a></li>
+
+																						<li><a href="https://bbs.mostmind.top/" target="_blank">月见网</a></li>
+
+																					</ul>
+									</div>
+								</div>
+																<div class="ceo-width-1-3">
+									<div class="foot-item">
+										<div class="foot-item-title"><i class="ceofont ceoicon-palette-fill"></i>关于我们</div>
+										<ul class="ceo-padding-remove">
+																																	<li><a href="/about" target="_blank">简介</a></li>
+
+																						<li><a href="/copyright" target="_blank">版权声明</a></li>
+
+																						<li><a href="https://pd.qq.com/s/mmmvwhnt?b=9" target="_blank">QQ 频道</a></li>
+
+																					</ul>
+									</div>
+								</div>
+																<div class="ceo-width-1-3">
+									<div class="foot-item">
+										<div class="foot-item-title"><i class="ceofont ceoicon-team-fill"></i>商务合作</div>
+										<ul class="ceo-padding-remove">
+																																	<li><a href="https://pm.axuremost.cn/shangwu" target="_blank">UI 设计/原型</a></li>
+
+																						<li><a href="https://pm.axuremost.cn/jianli" target="_blank">简历优化</a></li>
+
+																					</ul>
+									</div>
+								</div>
+															</div>
+						</div>
+					</div>
+				</div>
+				
+								<div class="foot-cop">
+					<div class="ceo-container ceo-padding-small ceo-clearfix">
+						<div class="ceo-float-left">
+							<span>© 2024 AxureMost.cn</span>
+										        		<a class="ceo-margin-small-right" href="https://pm.axuremost.cn/wp-sitemap.xml" target="_blank"><i class="ceofont ceoicon-map-pin-fill" aria-hidden="true"></i> 网站地图</a>
+			        		
+			        		
+							<span class="ceo-margin-small-right"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer nofollow">鄂ICP备2024063349号-1</a></span>
+						</div>
+						<div class="ceo-float-right ceo-visible@s">
+													</div>
+					</div>
+				</div>
+								<!--登录注册弹窗-->
+				<div id="modal-login" ceo-modal>
+    <div class="ceo-navbar-login ceo-modal-dialog">
+        <div class="ceo-grid-collapse" ceo-grid>
+            <div class="ceo-width-1-1 ceo-width-1-2@s ceo-visible@s">
+                <div class="zcontent" style="background-image: url(./assets/uploads/2024/07/登录背景.png)">
+                </div>
+            </div>
+            <div class="ceo-width-1-1 ceo-width-1-2@s">
+                <div class="ceo-position-relative">
+                    <div class="ycontent ceo-background-default ceo-panel">
+                        <button class="ceo-modal-close-default ceo-modal-close" type="button" ceo-close></button>
+                        <div class="ceo-login-title">
+                            <span>账号登录</span>
+                        </div>
+                
+                		                		<div class="box">
+                			<div class="zongcai-tips"></div>
+                			<form action="" method="POST" id="login-form" class="login-weixin login-form2">
+                				<div class="ceo-inline ceo-width-1-1 ceo-margin-small-bottom">
+                					<span class="ceo-form-icon"><i class="ceofont ceoicon-shield-user-line"></i></span>
+                					<input type="text" name="username" id="username" class="b-r-4 ceo-input ceo-text-small" placeholder="输入用户名/邮箱" required="required">
+                				</div>
+                				<div class="ceo-inline ceo-width-1-1 ceo-margin-small-bottom">
+                					<span class="ceo-form-icon"><i class="ceofont ceoicon-shield-keyhole-line"></i></span>
+                					<input type="password" name="password" id="password" placeholder="请输入密码" class="b-r-4 ceo-input ceo-text-small" value="">
+                				</div>
+                				
+                        		<div class="ceo-flex">
+                                                            		    <a href="https://pm.axuremost.cn/reset-password" class="ceo-text-muted ceo-text-small ceo-flex-1">忘记密码？</a>
+                                                            		                            		</div>
+                        		
+                				<div class="ceo-flex-middle ceo-margin-top-20">
+                					<input type="hidden" name="action" value="zongcai_login">
+                					<button class="ceo-login-btn change-color b-r-4 button mid dark ceo-button ceo-width-1-1">立即登录</button>
+                				</div>
+                			</form>
+                	    </div>
+                	                    	    
+                	                    	    <div class="ceo-login-qq">
+                            <div class="ceo-login-other">第三方账号登录</div>
+                                            		    <a href="javascript:;" class="btn change-color social-login ceo-margin-top button mid qq half qq_login_button" ceo-tooltip="QQ登录"><i class="ceofont ceoicon-qq-fill"></i></a>
+                		                                                                                                        		</div>
+                		                    </div>
+                    
+            		<div class="ceo-login-bottom">
+            		    <div class="ceo-flex">
+            		    登录即同意<a href="" target="_blank" class="ceo-flex-1">用户协议</a>没有账号？ <a href="#modal-register" ceo-toggle>立即注册</a>
+            		    </div>
+            		</div>
+        		</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-register" ceo-modal>
+    <div class="ceo-navbar-login ceo-modal-dialog">
+        <div class="ceo-grid-collapse" ceo-grid>
+            <div class="ceo-width-1-1 ceo-width-1-2@s ceo-visible@s">
+                <div class="zcontent" style="background-image: url(./assets/uploads/2024/07/登录背景.png)">
+                </div>
+            </div>
+            <div class="ceo-width-1-1 ceo-width-1-2@s">
+                <div class="ceo-position-relative">
+                    <div class="ycontent ceo-background-default ceo-panel">
+                        <button class="ceo-modal-close-default ceo-modal-close" type="button" ceo-close></button>
+                        <div class="ceo-login-title">
+                            <span>账号注册</span>
+                        </div>
+                
+                		                		<div class="box">
+                			<div class="zongcai-tips"></div>
+                			<form class="login-weixin ceo-margin-top-20 register-form2" action="" method="POST" id="register-form">
+                                                				<div class="ceo-inline ceo-width-1-1 ceo-margin-bottom-10">
+                					<span class="ceo-form-icon"><i class="ceofont ceoicon-mail-line"></i></span>
+                					<input type="email" name="email_address2" id="email_address2" placeholder="输入邮箱" class="b-r-4 ceo-input ceo-text-small" required="required">
+                				</div>
+                                                                <div class="ceo-inline ceo-width-1-1 ceo-margin-bottom-10">
+                                    <span class="ceo-form-icon"><i class="ceofont ceoicon-newspaper-line"></i></span>
+                                    <input type="text" name="verify_code" id="verify_code" placeholder="验证码" class="b-r-4 ceo-input ceo-text-small" required="required">
+                                    <button  class="send-verify-code">获取验证码</button>
+                                </div>
+                                                				<div class="ceo-inline ceo-width-1-1 ceo-margin-bottom-10">
+                					<span class="ceo-form-icon"><i class="ceofont ceoicon-shield-user-line"></i></span>
+                					<input type="text" name="username2" id="username2" placeholder="输入用户名" class="b-r-4 ceo-input ceo-text-small" required="required">
+                				</div>
+                				<div class="ceo-inline ceo-width-1-1 ceo-margin-bottom-10">
+                					<span class="ceo-form-icon"><i class="ceofont ceoicon-shield-keyhole-line"></i></span>
+                					<input type="password" name="password2" id="password2" placeholder="输入6位数以上密码" class="b-r-4 ceo-input ceo-text-small" required="required">
+                				</div>
+                				<div class="ceo-inline ceo-width-1-1 ceo-margin-bottom-10">
+                					<span class="ceo-form-icon"><i class="ceofont ceoicon-shield-keyhole-line"></i></span>
+                					<input type="password" name="repeat_password2" id="repeat_password2" placeholder="请再次输入密码" class="b-r-4 ceo-input ceo-text-small" required="required">
+                				</div>
+                                <div class="agreen">
+                                    <input id="agreement" name="agreen" type="checkbox" class="agreen_btn" required>
+                                    <label for="agreen"></label>
+                                    我已阅读并同意<a href="/disclaimer" target="_blank">《注册协议》</a>
+                                </div>
+                				<div class="ceo-flex ceo-flex-middle">
+                					<input type="hidden" name="action" value="zongcai_register">
+    					            <input type="hidden" name="ref" value="">
+                					<button class="ceo-login-btn submit change-color b-r-4 button mid dark ceo-button ceo-width-1-1">立即注册</button>
+                				</div>
+                			</form>
+                	    </div>
+                	                    	    
+                	                    	    <div class="ceo-login-qq">
+                            <div class="ceo-login-other">第三方账号登录</div>
+                                            		    <a href="javascript:;" class="btn change-color social-login ceo-margin-top button mid qq half qq_login_button" ceo-tooltip="QQ登录"><i class="ceofont ceoicon-qq-fill"></i></a>
+                		                                                                                                        		</div>
+                		                    </div>
+                    
+            		<div class="ceo-login-bottom">
+            		    <div class="ceo-flex">
+            		    登录即同意<a href="" target="_blank" class="ceo-flex-1">用户协议</a>已有账号？ <a href="#modal-login" ceo-toggle>立即登录</a>
+            		    </div>
+            		</div>
+        		</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-registersms" ceo-modal>
+    <div class="ceo-navbar-login ceo-modal-dialog">
+        <div class="ceo-grid-collapse" ceo-grid>
+            <div class="ceo-width-1-1 ceo-width-1-2@s ceo-visible@s">
+                <div class="zcontent" style="background-image: url(./assets/uploads/2024/07/登录背景.png)">
+                </div>
+            </div>
+            <div class="ceo-width-1-1 ceo-width-1-2@s">
+                <div class="ceo-position-relative">
+                    <div class="ycontent ceo-background-default ceo-panel">
+                        <button class="ceo-modal-close-default ceo-modal-close" type="button" ceo-close></button>
+                        <div class="ceo-login-title">
+                            <span>手机登录/注册</span>
+                        </div>
+                
+                		<div class="box">
+                			<div class="zongcai-tips"></div>
+                            <form action="" method="POST" id="login-form" class="login-weixin login-form2 ceo-margin-top-20">
+                                <div class="ceo-inline ceo-width-1-1 ceo-margin-small-bottom">
+                                    <span class="ceo-form-icon"><i class="ceofont ceoicon-smartphone-line"></i></span>
+                                    <input type="number" name="user_mobile" id="user_mobile" class="b-r-4 ceo-input ceo-text-small" placeholder="请输入手机号" required="required">
+                                </div>
+                                <div class="ceo-inline ceo-width-1-1 ceo-margin-small-bottom">
+                                    <div class="ceo-grid-small" ceo-grid>
+                                        <div class="ceo-width-3-5">
+                                            <span class="ceo-form-icon"><i class="ceofont ceoicon-newspaper-line"></i></span>
+                                            <input type="text" name="captcha" id="captcha" placeholder="请输入验证码" class="b-r-4 ceo-input ceo-text-small" value="">
+                                        </div>
+                                        <div class="ceo-width-2-5">
+                                            <span class="input-group-btn">
+                                                <script>var is_sms_login=true</script>
+                                                <button class="go-captcha_mobile b-r-4 button mid dark ceo-button ceo-button-default ceo-width-1-1" type="button"
+                                                                data-smstype="login" data-nonce="9a660b5ee3">发送验证码</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="ceo-flex">
+                                    <a href="#modal-register" class="ceo-text-muted ceo-text-small ceo-flex-1" ceo-toggle>账号注册</a>
+                                    <a href="#modal-login" class="ceo-text-small registersms" ceo-toggle>账号密码登录</a>
+                        		</div>
+                        		                                <div class="ceo-flex-middle ceo-margin-top">
+                                    <input type="hidden" name="action" value="zongcai_login_sms">
+                                    <button class="ceo-login-btn change-color b-r-4 button mid dark ceo-button ceo-width-1-1">登录/注册</button>
+                                </div>
+                            </form>
+                	    </div>
+                	    
+                	                    	    <div class="ceo-login-qq">
+                            <div class="ceo-login-other">第三方账号登录</div>
+                                            		    <a href="javascript:;" class="btn change-color social-login ceo-margin-top button mid qq half qq_login_button" ceo-tooltip="QQ登录"><i class="ceofont ceoicon-qq-fill"></i></a>
+                		                                                                                                        		</div>
+                		                    </div>
+                    
+            		<div class="ceo-login-bottom">
+            		    <div class="ceo-flex">
+            		    登录即同意<a href="" target="_blank" class="ceo-flex-1">用户协议</a>没有账号？ <a href="#modal-register" ceo-toggle>立即注册</a>            		    </div>
+            		</div>
+        		</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>var verify_sms_send = 0</script>
+<script>var verify_ceo_login = 0</script>								<!--基础功能弹窗-->
+        					</footer>
+
+            			<!--手机端菜单-->
+    		<div id="mob-nav1" ceo-offcanvas>
+    <div class="ceo-offcanvas-bar ceo-background-default ceo-box-shadow-small ceo-mobnav-box">
+		<div class="mob-nav">
+			<div class="ceo-margin-small-bottom ceo-text-center">
+				<a href="https://pm.axuremost.cn" class="logo ceo-display-inline-block ceo-margin-bottom"><img src="./assets/uploads/2025/01/202501232030536.png"></a>
+			</div>
+			<ul id="menu-%e9%a6%96%e9%a1%b5" class="nav"><li id="menu-item-2973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2973"><a href="https://pm.axuremost.cn/">首页</a></li>
+<li id="menu-item-4200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4200"><a>Axure 素材</a>
+<ul class="sub-menu">
+	<li id="menu-item-11231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11231"><a href="https://pm.axuremost.cn/free">免费素材</a></li>
+	<li id="menu-item-4171" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4171"><a href="https://pm.axuremost.cn/axure">元件库</a></li>
+	<li id="menu-item-3053" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3053"><a href="https://pm.axuremost.cn/c">C端</a></li>
+	<li id="menu-item-3004" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3004"><a href="https://pm.axuremost.cn/b">B端</a></li>
+	<li id="menu-item-3054" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3054"><a href="https://pm.axuremost.cn/g">G端</a></li>
+</ul>
+</li>
+<li id="menu-item-3055" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3055"><a href="https://pm.axuremost.cn/template">Axure模板<span class="jian">  NEW  </span></a></li>
+<li id="menu-item-11233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11233"><a>工作素材<span class="jian">  Free  </span></a>
+<ul class="sub-menu">
+	<li id="menu-item-11234" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11234"><a href="https://pm.axuremost.cn/ppt">PPT 素材</a></li>
+	<li id="menu-item-11235" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11235"><a href="https://pm.axuremost.cn/excel">Excel 模板</a></li>
+	<li id="menu-item-11236" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11236"><a href="https://pm.axuremost.cn/word">Word 模板</a></li>
+</ul>
+</li>
+<li id="menu-item-5422" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5422"><a href="https://pm.axuremost.cn/maps">导图书库</a></li>
+<li id="menu-item-4113" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4113"><a href="https://pm.axuremost.cn/docs/z">知识库<span class="jian">OSS</span></a></li>
+<li id="menu-item-4373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4373"><a href="https://pm.axuremost.cn/forum">知识社区</a></li>
+<li id="menu-item-3255" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3255"><a href="https://pm.axuremost.cn/software">常用软件</a></li>
+<li id="menu-item-3280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3280"><a href="https://pm.axuremost.cn/site">资源导航</a></li>
+<li id="menu-item-9148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9148"><a href="https://pm.axuremost.cn/notice">特惠公告</a></li>
+</ul>		</div>
+    </div>
+</div>
+<script>
+    var showNav = false;
+    function showNavClick()
+    {
+        if (!showNav) {
+            UIkit.offcanvas('#mob-nav1').show();
+            showNav = true;
+        } else {
+            UIkit.offcanvas('#mob-nav1').hide();
+            showNav = false;
+        }
+    }
+</script>
+<div class="ceo-app-footer-fixed ceo-app-footer ceo-hidden@s">
+    <a href="/">
+        <span class="icon">
+            <i class="ceofont ceoicon-home-3-line"></i>
+        </span>
+        <span class="text">首页</span>
+    </a>
+    <a href="/maps">
+        <span class="icon">
+            <i class="ceofont ceoicon-question-line"></i>
+        </span>
+        <span class="text">书库</span>
+    </a>
+    <a class="cat" onclick="showNavClick()">
+        <span class="icon">
+            <i class="ceofont ceoicon-apps-2-line"></i>
+        </span>
+        <span class="text">菜单</span>
+    </a>
+    <a href="/forum">
+        <span class="icon">
+            <i class="ceofont ceoicon-discuss-line"></i>
+        </span>
+        <span class="text">论坛</span>
+    </a>
+    <a href="/free">
+        <span class="icon">
+            <i class="ceofont ceoicon-account-circle-line"></i>
+        </span>
+        <span class="text">素材</span>
+    </a>
+</div>    		
+		</div>
+	    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ceomax-pro\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<style>
+			:root {
+				-webkit-user-select: none;
+				-webkit-touch-callout: none;
+				-ms-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+			}
+		</style>
+		<script type="text/javascript">
+			/*<![CDATA[*/
+			document.oncontextmenu = function(event) {
+				if (event.target.tagName != 'INPUT' && event.target.tagName != 'TEXTAREA') {
+					event.preventDefault();
+				}
+			};
+			document.ondragstart = function() {
+				if (event.target.tagName != 'INPUT' && event.target.tagName != 'TEXTAREA') {
+					event.preventDefault();
+				}
+			};
+			/*]]>*/
+		</script>
+		<script type="text/javascript" src="./assets/plugins/docspress/assets/vendor/ivent/dist/ivent.min.js" id="ivent-js"></script>
+<script type="text/javascript" id="docspress-js-extra">
+/* <![CDATA[ */
+var docspress_vars = {"ajaxurl":"https:\/\/pm.axuremost.cn\/wp-admin\/admin-ajax.php","nonce":"e386a18ee1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./assets/plugins/docspress/assets/js/script.min.js" id="docspress-js"></script>
+<script type="text/javascript" id="docspress-js-after">
+/* <![CDATA[ */
+                (function (ivent) {
+                    ivent.on(document, "docspress_ajax_loaded", function (event) {
+                        // Fallback.
+                        const new_page = event?.data;
+
+                        /*
+ * New page content loaded via ajax you can get in variable 'new_page'
+ * Example: console.log(new_page);
+ */
+                    });
+                }(ivent));
+            
+/* ]]> */
+</script>
+<script type="text/javascript" src="./assets/cache/wpo-minify/1759145815/assets/wpo-minify-footer-member1702267184.min.js" id="wpo_min-footer-2-js"></script>
+<script type="text/javascript" src="./assets/cache/wpo-minify/1759145815/assets/wpo-minify-footer-product1713342454.min.js" id="wpo_min-footer-3-js"></script>
+<script type="text/javascript" src="./assets/themes/ceomax-pro/ceoshop/assets/js/spin.min.js" id="spin-js"></script>
+<script type="text/javascript" src="./assets/themes/ceomax-pro/ceoshop/assets/js/ladda.min.js" id="ladda-js"></script>
+<script type="text/javascript" src="./assets/js/clipboard.min.js" id="clipboard-js"></script>
+<script type="text/javascript" src="./assets/themes/ceomax-pro/ceoshop/assets/js/decimal.min.js" id="decimal-js"></script>
+<script type="text/javascript" src="./assets/cache/wpo-minify/1759145815/assets/wpo-minify-footer-index1753558806.min.js" id="wpo_min-footer-8-js"></script>
+<script type="text/javascript" id="wpo_min-footer-9-js-extra">
+/* <![CDATA[ */
+var zongcai = {"ajaxurl":"https:\/\/pm.axuremost.cn\/wp-admin\/admin-ajax.php","theme_url":"https:\/\/pm.axuremost.cn\/wp-content\/themes\/ceomax-pro","login_url":"\/user\/login","register_url":"\/user\/register","followed_btn":"\u5df2\u5173\u6ce8","follow_btn":"<i class=\"ceofont ceoicon-add-line\"><\/i>\u5173\u6ce8Ta","webp":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./assets/cache/wpo-minify/1759145815/assets/wpo-minify-footer-ajax1753691700.min.js" id="wpo_min-footer-9-js"></script>
+<script type="text/javascript" src="./assets/themes/ceomax-pro/static/js/lazysizes.min.js" id="lazysizes-js"></script>
+<script type="text/javascript" src="./assets/themes/ceomax-pro/static/js/jquery.fancybox.min.js" id="fancybox-js"></script>
+<script type="text/javascript" src="./assets/cache/wpo-minify/1759145815/assets/wpo-minify-footer-js20211746694084.min.js" id="wpo_min-footer-12-js"></script>
+    	<!-- CeoMax-Pro主题 -->
+    	<div id="ceoshop-member-box"></div>
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac011c0db299eb3c2ffab14c418df3b0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    	
+<div class="ceo-footer-h" style="width: 191px;height: 204px;left: 0px;bottom: 0px;">
+    <a href="/vip" target="_blank"><img src="./assets/uploads/2024/06/标志.png"></a>
+</div>
+
+<script>
+    console.log("\n %c \u603b\u88c1\u4e3b\u9898 V7.9 %c \u0068\u0074\u0074\u0070\u0073\u003a\u002f\u002f\u0077\u0077\u0077\u002e\u0063\u0065\u006f\u0074\u0068\u0065\u006d\u0065\u002e\u0063\u006f\u006d \n\n", "color: #fff; background: #3371f5; padding:5px 0;", "background: #3371f5; padding:5px 0;");
+</script>
+
+<style>
+	.night .ceo-logo-nav-night{
+        background: url(./assets/uploads/2025/01/202501232030536.png) no-repeat!important;
+        background-size: 150px auto;
+    }
+    .night .ceo-app-logo2{
+        background: url(./assets/uploads/2025/01/202501232030536.png) no-repeat!important;
+        background-size: 92px auto!important;
+    }
+    #canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+</style>
+
+    </body>
+</html>
